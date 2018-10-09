@@ -15,4 +15,4 @@
 
 Or
 
-`build.sh`
+`./build.sh`
