@@ -5,11 +5,18 @@ digraph G {
 
     node [color="black", shape="rectangle"] 
 
+    "G" [label="Garage Projects",color="red"] 
+    "HCB" [label="Hang Chipboard",color="black"] 
+    "HCBS" [label="Hang Chipboard Support",color="black"] 
+
     "EH" [label="Enjoy Holiday",color="red"] 
     "BT" [label="Book tickets",color="green"] 
     "PSNB" [label="Pack suitcase night before",color="red"] 
     "BGB" [label="Buy guide book",color="orange"] 
     "BEC" [label="Buy electric converter",color="orange"] 
+
+    "G" -> "HCB"
+    "HCB" -> "HCBS"
 
     "EH" -> "BT" 
     "EH" -> "PSNB" 
