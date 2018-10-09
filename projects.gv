@@ -5,13 +5,23 @@ digraph G {
 
     node [color="black", shape="rectangle"] 
 
-    "R" [label="Root",color="black"] 
+    "R" [label="Root"] 
 
-    "G" [label="Garage Projects",color="red"] 
-    "HCB" [label="Hang Chipboard",color="black"] 
-    "HCBS" [label="Hang Chipboard Support",color="black"] 
+    "G" [label="Garage Projects"] 
+    "HCB" [label="Hang Chipboard"] 
+    "HCBS" [label="Hang Chipboard Support"] 
+
+    "OS" [label="Operating Systems"] 
+    "RHD" [label="Replace HD"] 
+    "SSD" [label="Shop For Swappable Drive Bay"] 
+    "INIX" [label="Install NixOS"] 
 
     "R" -> "G"
     "G" -> "HCB"
     "HCB" -> "HCBS"
+
+    "R" -> "OS"
+    "OS" -> "RHD"
+    "RHD" -> "INIX"
+    "OS" -> "SSD"
 }
